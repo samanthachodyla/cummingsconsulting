@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cummings Consulting Group</title>
+  <meta name="description" content="Cummings Consulting Group — energy and sustainability consulting led by Larry Cummings.">
+  <meta name="theme-color" content="#2f7d4f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%232f7d4f'/%3E%3Cpath d='M9 20c6 0 12-4 14-12-8 1-14 6-14 12z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="index.html">Cummings <span>Consulting</span> Group</a>
+    <nav>
+      <a href="#leadership">Leadership</a>
+      <a href="#partners">Partners</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <!-- Hero graphic: a sun rising over a renewable landscape. Inline SVG, about 3 KB, no images to download. -->
+      <svg viewBox="0 0 1200 560" role="img" aria-labelledby="hero-title">
+        <title id="hero-title">A sun rising over green hills with wind turbines and flowing energy lines</title>
+        <!-- sun + rays -->
+        <g class="rays" style="stroke:var(--sun)" stroke-width="3" stroke-linecap="round" opacity=".8">
+          <line x1="600" y1="150" x2="600" y2="190"/>
+          <line x1="455" y1="210" x2="482" y2="238"/>
+          <line x1="745" y1="210" x2="718" y2="238"/>
+          <line x1="395" y1="330" x2="435" y2="330"/>
+          <line x1="805" y1="330" x2="765" y2="330"/>
+          <line x1="510" y1="170" x2="525" y2="206"/>
+          <line x1="690" y1="170" x2="675" y2="206"/>
+        </g>
+        <circle cx="600" cy="330" r="130" style="fill:var(--sun)" opacity=".95"/>
+
+        <!-- back hills -->
+        <path d="M0 380 C 200 300, 380 330, 600 360 S 1000 300, 1200 350 V560 H0Z" style="fill:var(--sky)"/>
+
+        <!-- wind turbines on the back hills -->
+        <g style="stroke:var(--ink);fill:var(--ink)">
+          <line x1="250" y1="340" x2="250" y2="210" stroke-width="5" stroke-linecap="round"/>
+          <g transform="translate(250 210)">
+            <g class="rotor">
+              <path d="M0 0 L-5 -8 L0 -78 L5 -8Z"/>
+              <path d="M0 0 L-5 -8 L0 -78 L5 -8Z" transform="rotate(120)"/>
+              <path d="M0 0 L-5 -8 L0 -78 L5 -8Z" transform="rotate(240)"/>
+              <circle r="7"/>
+            </g>
+          </g>
+          <line x1="960" y1="325" x2="960" y2="215" stroke-width="4" stroke-linecap="round"/>
+          <g transform="translate(960 215)">
+            <g class="rotor slow">
+              <path d="M0 0 L-4 -7 L0 -64 L4 -7Z"/>
+              <path d="M0 0 L-4 -7 L0 -64 L4 -7Z" transform="rotate(120)"/>
+              <path d="M0 0 L-4 -7 L0 -64 L4 -7Z" transform="rotate(240)"/>
+              <circle r="6"/>
+            </g>
+          </g>
+          <line x1="1080" y1="335" x2="1080" y2="265" stroke-width="3" stroke-linecap="round"/>
+          <g transform="translate(1080 265)">
+            <g class="rotor">
+              <path d="M0 0 L-3 -5 L0 -44 L3 -5Z"/>
+              <path d="M0 0 L-3 -5 L0 -44 L3 -5Z" transform="rotate(120)"/>
+              <path d="M0 0 L-3 -5 L0 -44 L3 -5Z" transform="rotate(240)"/>
+              <circle r="4"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- front hills -->
+        <path d="M0 450 C 260 380, 460 430, 640 440 S 1000 400, 1200 430 V560 H0Z" style="fill:var(--leaf)"/>
+
+        <!-- energy flowing across the land -->
+        <g fill="none" style="stroke:var(--bg)" stroke-width="3" stroke-linecap="round" opacity=".9">
+          <path class="flow" d="M0 490 C 260 430, 460 480, 640 488 S 1000 450, 1200 478"/>
+          <path class="flow" d="M0 525 C 260 470, 460 515, 640 522 S 1000 490, 1200 512" opacity=".6"/>
+        </g>
+      </svg>
+
+      <h1>Powering a <em>cleaner</em>,<br>smarter future.</h1>
+      <p>Energy and sustainability consulting that turns ambition into measurable results.</p>
+    </div>
+
+    <section id="leadership">
+      <div class="wrap">
+        <p class="eyebrow">Leadership</p>
+        <div class="leader">
+          <div class="avatar" aria-hidden="true">LC</div>
+          <div>
+            <h3>Larry Cummings</h3>
+            <p class="role">Founder &amp; Principal, Cummings Consulting Group</p>
+            <p>Larry leads Cummings Consulting Group, helping organizations cut energy use, improve indoor environments, and build sustainability into how they operate.</p>
+            <a class="btn" href="larry-cummings.html">Read Larry’s bio →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="partners">
+      <div class="wrap">
+        <p class="eyebrow">Partners</p>
+        <h2>Built on strong partnerships</h2>
+        <p style="color:var(--muted);max-width:60ch;margin:0">Larry has partnered with industry leaders and research institutions across energy, building performance, and healthy indoor environments.</p>
+        <div class="partners">
+          <article class="partner">
+            <h3>Trane</h3>
+            <p>Heating, ventilation, and air conditioning systems and building energy efficiency.</p>
+          </article>
+          <article class="partner">
+            <h3>5 Layers Deep</h3>
+            <p>Strategic partner.</p>
+          </article>
+          <article class="partner">
+            <h3>Synexis</h3>
+            <p>Continuous microbial reduction technology for healthier indoor air and surfaces.</p>
+          </article>
+          <article class="partner">
+            <h3>University Partnerships</h3>
+            <p>Collaborations with academic institutions on research and applied sustainability.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Cummings Consulting Group</span>
+      <span>A lightweight site: no trackers, no web fonts, no images to download.</span>
+    </div>
+  </footer>
+</body>
+</html>
