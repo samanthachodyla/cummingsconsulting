@@ -8,6 +8,8 @@
   --sun: #e8a33d;
   --sky: #1d5c63;
   --card: #fffdf7;
+  --cool: #2b8fc4;
+  --warm: #d9673a;
   color-scheme: light dark;
 }
 @media (prefers-color-scheme: dark) {
@@ -20,6 +22,8 @@
     --sun: #f2b450;
     --sky: #6fb6bd;
     --card: #141f1a;
+    --cool: #5cb8e6;
+    --warm: #ef8a5c;
   }
 }
 * { box-sizing: border-box; }
@@ -45,7 +49,6 @@ nav a:hover { color: var(--ink); }
 
 /* Hero */
 .hero { text-align: center; padding: 8px 16px 40px; }
-.hero svg { border-radius: 0 0 24px 24px; }
 .hero svg { width: 100%; height: auto; max-height: 62vh; display: block; margin: 0 auto; }
 .hero h1 {
   font-size: clamp(2rem, 5.5vw, 3.6rem); line-height: 1.08;
@@ -67,16 +70,17 @@ nav a:hover { color: var(--ink); }
 .partner h3 a:hover { color: var(--leaf); }
 
 /* Hero animation — calm, and off for anyone who prefers reduced motion */
-.blade { transform-box: fill-box; transform-origin: 50% 100%; }
 .rotor { transform-box: view-box; animation: spin 9s linear infinite; }
 .rotor.slow { animation-duration: 13s; }
 .flow { stroke-dasharray: 6 14; animation: flow 3s linear infinite; }
-.rays { animation: pulse 6s ease-in-out infinite; transform-origin: 600px 330px; }
+.led { animation: blink 2.4s steps(2, jump-none) infinite; }
+.needle { transform-box: view-box; transform-origin: 1040px 430px; transform: rotate(-58deg); animation: settle 5s ease-in-out infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes flow { to { stroke-dashoffset: -40; } }
-@keyframes pulse { 50% { opacity: .55; transform: scale(1.04); } }
+@keyframes blink { 50% { opacity: .25; } }
+@keyframes settle { 50% { transform: rotate(-50deg); } }
 @media (prefers-reduced-motion: reduce) {
-  .rotor, .flow, .rays { animation: none; }
+  .rotor, .flow, .led, .needle { animation: none; }
 }
 
 section { padding: 56px 0; border-top: 1px solid var(--line); }
