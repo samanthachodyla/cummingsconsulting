@@ -95,8 +95,6 @@ header.top.over .brand span { color: #7fd6a4; }
 }
 .points li { display: inline-flex; align-items: center; gap: 8px; }
 .points svg { color: #7fd6a4; flex: none; }
-.partner h4 a { color: inherit; text-decoration: none; }
-.partner h4 a:hover { color: var(--leaf); }
 
 section { padding: 56px 0; border-top: 1px solid var(--line); }
 .eyebrow {
@@ -122,17 +120,32 @@ h2 { font-size: clamp(1.6rem, 3.6vw, 2.3rem); margin: 0 0 16px; letter-spacing: 
 .btn:hover { background: var(--sky); color: #fff; }
 
 /* Partners */
-.areas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 40px 48px; margin-top: 24px; align-items: start; }
-.area { display: grid; gap: 14px; min-width: 0; }
-.area h3 { margin: 0; font-size: 1.5rem; }
-.area > p { margin: 0; }
-.partner {
-  background: var(--card); border: 1px solid var(--line); border-radius: 14px;
-  padding: 22px; position: relative; overflow: hidden;
+.section-title { text-align: center; margin-bottom: 36px; text-wrap: balance; }
+.areas {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: 24px; max-width: 980px; margin: 0 auto; align-items: stretch;
 }
-.partner h4 { margin: 0 0 6px; font-size: 1.25rem; }
-.partner .eyebrow { font-size: 12px; margin-bottom: 4px; }
-.partner p { margin: 0; color: var(--muted); font-size: 15px; }
+.area {
+  display: flex; flex-direction: column; align-items: center; gap: 14px; min-width: 0;
+  text-align: center; background: var(--card); border: 1px solid var(--line);
+  border-radius: 20px; padding: 40px 32px;
+}
+.area h3 { margin: 0; font-size: 1.5rem; letter-spacing: -0.01em; }
+.area > p { margin: 0; max-width: 46ch; color: var(--muted); }
+.area-icon {
+  display: grid; place-items: center; width: 60px; height: 60px; border-radius: 50%;
+  color: var(--leaf); background: color-mix(in srgb, var(--leaf) 12%, transparent);
+}
+.feature {
+  margin-top: 10px; padding-top: 22px; border-top: 1px solid var(--line);
+  display: flex; flex-direction: column; align-items: center; gap: 4px; width: 100%;
+}
+.feature .eyebrow { font-size: 12px; margin: 0; }
+.feature h4 { margin: 2px 0 0; font-size: 1.2rem; }
+.feature h4 a { color: inherit; text-decoration: none; }
+.feature h4 a:hover { color: var(--leaf); }
+.feature p { margin: 0; color: var(--muted); font-size: 15px; }
+.feature-link { margin-top: 10px; font-weight: 600; font-size: 15px; }
 
 /* Bio page */
 .bio { display: grid; grid-template-columns: 220px 1fr; gap: 40px; padding: 32px 0 56px; }
