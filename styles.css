@@ -122,7 +122,7 @@ h2 { font-size: clamp(1.6rem, 3.6vw, 2.3rem); margin: 0 0 16px; letter-spacing: 
 .btn:hover { background: var(--sky); color: #fff; }
 
 /* Partners */
-.partners { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 24px; }
+.partners { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 24px; max-width: 560px; }
 .partner {
   background: var(--card); border: 1px solid var(--line); border-radius: 14px;
   padding: 22px; position: relative; overflow: hidden;
